@@ -2,32 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="U-XA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aby Herdiansyah - Student Informatics Engineer</title>
     <link rel="stylesheet" href="./styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <!--header-->
     <header>
         <div class="main-container">
             <div class="nav">
                 <div class="logo">
-                    <a href="http://">AH</a>
+                    <a href="#">AH</a>
                 </div>
-                
                 <nav>
-                    <ul>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#Portofolio">Portofolio</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#contact">contact</a></li>
-                        <li><a href="/resume.pdf" target="_blank">
-                            <button class="btn">
-                                Resume</button>
-                            </a>
-                        </li>
+                    <ul class="nav-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/resume.pdf" target="_blank"><button class="btn">Resume</button></a></li>
                     </ul>
                 </nav>
                 <div class="burger">
@@ -36,27 +31,101 @@
                     <div class="line-3"></div>
                 </div>
             </div>
-
-            <section id="here">
-                <div class="hero-left">
-                    <h3 class="pre-title">My name is</h3>
-                    <h1 class="hero-name">Aby <span>Herdiansyah</span></h1>
-                    <p>
-                        6th semester Informatics Engineering student at Nusantara Islamic University who is 
-                        proficient in various programming languages and Microsoft programs. Strong ability for 
-                        collaboration within a team and working independently. Excellent communication skills
-                        complemented by a desire to analysed data. Opportunities to apply programming skills, data 
-                        statistics, and programming processes to encourage insightful decision making and encourage 
-                        the ability to be quick and responsive in all matters in both academic and professional 
-                        environments.
-                    </p>
-                </div>
-                <div class="hero-right">
-                    <img src="./images/hero.svg" alt="Person Standing" class="hero-img">
-                </div>
-            </section>
-            
         </div>
+        <section id="hero">
+            <div class="hero-left">
+                <h3 class="pre-title">My name is</h3>
+                <h1 class="hero-name">Aby <span>Herdiansyah</span></h1>
+                <p>
+                    6th semester Informatics Engineering student at Nusantara Islamic University who is proficient in various programming languages and Microsoft programs. Strong ability for collaboration within a team and working independently. Excellent communication skills complemented by a desire to analyzed data. Opportunities to apply programming skills, data statistics, and programming processes to encourage insightful decision making and encourage the ability to be quick and responsive in all matters in both academic and professional environments.
+                </p>
+            </div>
+            <div class="hero-right">
+                <img src="./images/hero.svg" alt="Person Standing" class="hero-img">
+            </div>
+        </section>
     </header>
+    <main>
+        <section id="services" class="main-section">
+            <h2>Services</h2>
+            <div class="services-container">
+                <div class="service">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and functional websites using the latest web technologies.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Analyzing data to help make informed decisions and improve business operations.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Software Development</h3>
+                    <p>Developing software solutions to meet various business needs.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="main-section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="./images/project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./images/project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./images/project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Description of project 3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="main-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Programming Languages</h3>
+                    <p>Python, Java, JavaScript,</p>
+                </div>
+                <div class="skill">
+                    <h3>Web Technologies</h3>
+                    <p>HTML, CSS, React, Node.js</p>
+                </div>
+                <div class="skill">
+                    <h3>Tools</h3>
+                    <p>google collab, looker studio</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="main-section">
+            <h2>Contact</h2>
+            <form action="#" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Aby Herdiansyah. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/abyhrdians" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/abyherdiansyah" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/abyherdiansyah" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
